@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Carlos Pérez Miguel"
+title: ""
 comments: false
 sharing: false
 sidebar: collapse
@@ -22,5 +22,4 @@ Contact
 - E-mail: carlos DOT perezm AT ehu DOT es
 - Phone: +34 943 018 012
 - Fax: +34 943 015 590
-
-Address: Facultad de Informatica de San Sebastian, P. Manuel de Lardizabal, 1, 20018 San Sebastián, Guipuzcoa (Spain) 
+- Address: Facultad de Informatica de San Sebastian, P. Manuel de Lardizabal, 1, 20018 San Sebastián, Guipuzcoa (Spain)
