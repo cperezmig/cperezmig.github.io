@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Carlos Pérez-Miguel]]></title>
+  <title><![CDATA[carlos.perezmiguel.es]]></title>
   <link href="http://cperezmig.github.io/atom.xml" rel="self"/>
   <link href="http://cperezmig.github.io/"/>
-  <updated>2014-05-06T17:11:09+02:00</updated>
+  <updated>2014-05-07T15:05:16+02:00</updated>
   <id>http://cperezmig.github.io/</id>
   <author>
     <name><![CDATA[Carlos Pérez-Miguel]]></name>
-    
+    <email><![CDATA[carlos.perezm@ehu.es]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
