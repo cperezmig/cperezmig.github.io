@@ -8,7 +8,7 @@ no_header: true
 footer: true
 ---
 
-{% img left /images/carlos_nyc.jpg %}
+{% img right /images/carlos_nyc.jpg %}
 
 About me
 ------------
