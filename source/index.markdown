@@ -21,8 +21,6 @@ peer-to-peer networks.
 
 Contact
 -------
-You can find me in:
-
 - E-mail: [carlos.perezm@ehu.es](mailto:carlos.perezm@ehu.es)
 - Phone: +34 943 018 012
 - Fax: +34 943 015 590

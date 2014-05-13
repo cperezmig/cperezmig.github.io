@@ -109,3 +109,8 @@ facebook_like: false
 
 # LinkedIn user
 linkedin_user: cperezmig
+
+# BibTex Citation plugin
+citation:
+    citation_style: plugins/ieee-with-url.csl
+    citation_locale: en
