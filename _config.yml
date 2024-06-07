@@ -12,7 +12,7 @@ email: carlos@perezmiguel.es
 website: carlos.perezmiguel.es
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: never
 
 # Social links
 twitter_username: cperezmig
