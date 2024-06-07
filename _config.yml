@@ -1,116 +1,245 @@
-# ----------------------- #
-#      Main Configs       #
-# ----------------------- #
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
 
-url: http://cperezmig.github.io
-title: carlos.perezmiguel.es
-subtitle: 
-author: Carlos Pérez-Miguel
-simple_search: https://www.google.com/search
-description: Carlos Pérez-Miguel''s Personal Web Site
+# Content configuration version
+version: 2
 
-# Default date format is "ordinal" (resulting in "July 22nd 2007")
-# You can customize the format as defined in
-# http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
-# Additionally, %o will give you the ordinal representation of the day
-date_format: "ordinal"
+# Personal info
+name: "Carlos Pérez Miguel"
+title: PhD and Data Engineer
+email: carlos@perezmiguel.es
+website: carlos.perezmiguel.es
 
-# RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
-subscribe_email:
-# RSS feeds can list your email address if you like
-email: carlos.perezm@ehu.es
+# Dark Mode (true/false/never)
+darkmode: false
 
-# ----------------------- #
-#    Jekyll & Plugins     #
-# ----------------------- #
+# Social links
+twitter_username: cperezmig
+github_username: cperezmig
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+#instagram_username: jameswgrant
+linkedin_username: cperezmig
+# xing_username: jekyll
+# pinterest_username: jekyll
+#youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
 
-# If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /
-permalink: /blog/:year/:month/:day/:title/
-source: source
-destination: public
-plugins: plugins
-code_dir: downloads/code
-category_dir: blog/categories
-markdown: kramdown
-rdiscount:
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-pygments: false # default python pygments have been replaced by pygments.rb
+# Additional icon links
+#additional_links:
+#- title: itsgoingto.be
+  #icon: fas fa-globe
+  #url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
 
-paginate: 10          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
-recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
 
-titlecase: true       # Converts page and post titles to titlecase
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, I'm __Carlos Pérez-Miguel__. I received the MSc in Computer Science from the University of the Basque Contry UPV/EHU, Gipuzkoa, Spain in 2005. I am currently pursuing my PhD in Computer Science at the same university in the [Inteligent Systems Group](http://www.sc.ehu.es/ccwbayes/isg/index.php).  My research interests include parallel and distributed systems and specially, peer-to-peer networks.
 
-# list each of the sidebar modules you want to include, in the order you want them to appear.
-# To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+content:
+  #- title: Projects # Title for the section
+    #layout: list # Type of content section (list/text)
+    #content:
+      #- layout: top-middle
+        #title: Super awesome project
+        #link: github.com/sproogen
+        ## link_text: Project Website
+        #additional_links:
+          #- title:  sproogen/modern-resume-theme
+            #icon: fab fa-github
+            #url: github.com/sproogen/modern-resume-theme
+          ## - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          ##   icon: fab fa-github
+          ##   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        #quote: >
+          #This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        #description: | # this will include new lines to allow paragraphs
+          #I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
-# Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
-# and add an array with the asides you want to use.
-# blog_index_asides:
-# post_asides:
-# page_asides:
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Sparta Commodities
+        link: https://www.spartacommodities.com/
+        # link_text: boringcompany.com
+        sub_title: Senior Data Engineer
+        caption: November 2021 - January 2024
+        quote: >
+          Real time data ingestion and processing for a Series-A scale-up, international Oil and Gas SaaS company.
+        description: | # this will include new lines to allow paragraphs
+            Senior data engineer working at an international, remote-first, Oil and Gas Data company.
+            Main responsabilities:
+              - Full software life cycle from conception to application and
+                validation of tests.
+              - Build and maintain real time data pipelines.
+              - Administration of infrastructure.
+              - Mentoring of new team members.
+              - Tech lead of several projects:
+                - New product to improve visualization of historical data.
+                - Migration of large amount of real time data and related services from PostgreSQL to Redshift.
+                - Design and develop MVP for real time price data ingestion and anomaly detection.
 
-# Theme navigation, for the use of the navbar
-navigation:
-- text: Home
-  url: /
-- text: Publications
-  url: /publications
+            Technologies: Apache Kafka, Python, Docker, PostgreSQL, Redshift, AWS, Redis, Apache Flink, Vector.dev, Datadog, Apache Iceberg.
+      - layout: left
+        title: Safecont
+        link: https://twitter.com/safecontes
+        # link_text: boringcompany.com
+        sub_title: Cofounder - CTO - Data Engineer
+        caption: November 2021 - January 2023
+        quote: >
+          Improving the experience of SEO specialists and Online Marketeers by using machine learning and Big Data techniques.
+        description: | # this will include new lines to allow paragraphs
+          Design tools using Data Mining and Big Data technologies to optimise the on-line visibility of our clients.
+          Main responsibilities:
+            - Full software life cycle from conception to application and validation of tests.
+            - Management of research projects:
+                - Duplicate content detection
+                - Document classification and clustering
+                - PageRank optimization
+                - Time-series forecasting
+                - Temporal Travel Salesman Problem
+            - Administration of several servers.
+            - Trainer of new application users and to the new team members.
+            - Customer support.
 
+          Technologies: Python, Spark, Scikit-learn, Numpy, Pandas, Dask, Numba, Mongodb, Mesos, Hadoop, Solr, Nutch, Google App Studio, MySQL, REST APIs, Wordpress, CodeIgniter, D3js, Highcharts, Nginx, Apache, Docker, Google Docs API, AWS, Streamlit, SQLite.
+      - layout: left
+        title: Orange-France Telecom
+        #link: https://www.orange.fr
+        # link_text: boringcompany.com
+        sub_title: System Administrator
+        caption: October 2007 - August 2008
+        quote: >
+          Sysadmin for the bistest telecom company on France.
+        description: | # this will include new lines to allow paragraphs
+          Administration and integration of Orange's Address Book web applications.
+          Main responsibilities:
+              - Administration of several web servers and load balancers.
+              - Validation of integration tests.
+              - Partnership with several developer teams at India and France.
+              - Partnership with in-house production teams.
 
-# ----------------------- #
-#   3rd Party Settings    #
-# ----------------------- #
+          Technologies: Apache, Tomcat, Perl, Bash, VMWare, Java, Redhat Linux.
+      - layout: left
+        title: Crédit Agricole CIB
+        #link: https://www.orange.fr
+        # link_text: boringcompany.com
+        sub_title: Back Office Application Developer
+        caption: May 2006 - August 2007
+        quote: >
+          Sysadmin for the bistest telecom company on France.
+        description: | # this will include new lines to allow paragraphs
+          Main developer of the application Suprema, Calyon’s Back Office application for titles borrowing and lending.
+          Main responsibilities:
+            - Full software life cycle from conception to application and validation of tests.
+            - In-house financial libraries C++ Development, evolutions and bug fixing.
+            - Trainer of new application users and to the new team members.
+            - Partnership with several teams including Tokyo and New York.
+            - Customer support.
 
-# Github repositories
-github_user:
-github_repo_count: 0
-github_show_profile_link: true
-github_skip_forks: true
+          Technologies: C, C++, Java, Shell, SQL, Unix.
+      - layout: left
+        title: KUTXABANK
+        sub_title: Embedded Systems Developer
+        caption: October 2005 - May 2006
+        #quote: >
+          #Sysadmin for the bistest telecom company on France.
+        description: | # this will include new lines to allow paragraphs
+          Main responsibilities:
+            - Analysis and design of an embedded application for processing banking operations.
+            - Inhouse financial libraries C Development.
+            - Full software life cycle from conception to application and validation of tests.
+            - Trainer of new application users.
 
-# Twitter
-twitter_user:
-twitter_tweet_button: true
+          Technologies: C, Java, Debian Linux, XML, Shell
 
-# Google +1
-google_plus_one: false
-google_plus_one_size: medium
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: University of Basque Country
+        caption: 2010 - 2015
+        sub_title: PhD in Computer Science
+        quote: >
+          PhD thesis: "High Throughput Computing over Peer-to-peer Networks"
+        description: | # this will include new lines to allow paragraphs
+          Advisors: J. Miguel-Alonso and A. Mendiburu
 
-# Google Plus Profile
-# Hidden: No visible button, just add author information to search results
-googleplus_user: 
-googleplus_hidden: false
+          Viva: 18/06/2015
 
-# Pinboard
-pinboard_user:
-pinboard_count: 3
+          Visiting Scholar at the NICAL group, University of Science and Technology of China, Hefei, China (January-April 2013).
 
-# Delicious
-delicious_user:
-delicious_count: 3
+          Partially funded by an Doctoral Grant from the Basque Government.
+      - layout: left
+        title: University of Basque Country
+        caption: 2010 - 2015
+        sub_title: MSc in Distributed Systems
+        quote: >
+          MSc thesis: "Parallelization of Estimation of Distribution Algorithms over the Cell Broadband Engine"
+        description: | # this will include new lines to allow paragraphs
+          Parallelization and vectorization of scientific codes over several parallel architectures.
+      - layout: left
+        title: University of Basque Country
+        caption: 1999 - 2005
+        sub_title: MSc in Computer Science
+        quote: >
+          MSc thesis: "Peer-to-peer file sharing system"
+        #Main subjects: Mathematics, Statistics, Physics, Programming, Operational Research, Telecommunication Systems, Digital and Analogical Electronics.
+        description: | # this will include new lines to allow paragraphs
+          Design, analysis and assessment of IT systems in general, considering the different aspects of management, orgranisation and direction of IT projects, maintenance of equipment and infrastructure, artificial intelligence, parallelism and mass management of information.
 
-# Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+          9 months in Université de Versailles-Saint Quentin en Yvelines, Versailles, France (Erasmus Grant).
+  - title: Publications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Journals
+        description: | # this will include new lines to allow paragraphs
+          - Pérez-Miguel, C., Miguel-Alonso, J. and Mendiburu, A. "Competition-based failure-aware scheduling for High-Throughput Computing systems on peer-to-peer networks". **Cluster Computing, 18(3), 1229-1249, 2015.**
+          - Pérez-Miguel, C., Miguel-Alonso, J. and Mendiburu, A. "Modeling the availability of Cassandra". **Journal of Parallel and Distributed Computing, 86, 29-44, 2015.**
+          - Pérez-Miguel, C., Miguel-Alonso, J. and Mendiburu, A. "High throughput computing over peer-to-peer networks". **Future Generation Computer Systems, 29(1), 352-360, 2013.**
+          - Pérez-Miguel, C., Miguel-Alonso, J. and Mendiburu, A. "Porting Estimation of Distribution Algorithms to the Cell Broadband Engine". **Parallel Computing, 36(10-11), 618-634, 2010.**
+      - layout: left
+        title: Conferences
+        description: | # this will include new lines to allow paragraphs
+          - Pérez-Miguel, C., Miguel-Alonso, J. and Mendiburu, A. "Sistemas HTC sobre redes P2P". **XXI Jornadas de Paralelismo, CEDI, Valencia, Spain, 2010.**
+          - Pérez-Miguel, C., Miguel-Alonso, J. and Mendiburu, A. "Porting Estimation of Distribution Algorithms to the Cell Broadband Engine". **Best Paper Award.** **Second International Workshop on Parallel Architectures and Bioinspired Algorithms (WPABA), Raleigh, NC, USA, 2009.**
+          - Pérez-Miguel, C., Miguel-Alonso, J. and Mendiburu, A. "Evaluating the cell broadband engine as a platform to run estimation of distribution algorithms". **GECCO, Montreal, Canada, 2009.**
+          - Pérez-Miguel, C., Miguel-Alonso, J. and Mendiburu, A. "Evaluation of the Cell Broadband Engine running Continuous Estimation of Distribution Algorithms". **XX Jornadas de Paralelismo. A Coruña. Spain. 2009.**
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in parallel and distributed systems, some of my other interests and hobbies are:
+      - Traveling
+      - Reading
+      - Bikes
+      - Bread bakery
 
-# Google Analytics
-google_analytics_tracking_id: UA-7070559-6
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
 
-# Facebook Like
-facebook_like: false
+# Build settings
+remote_theme: sproogen/resume-theme
 
-# LinkedIn user
-linkedin_user: cperezmig
+sass:
+  sass_dir: _sass
+  style: compressed
 
-# BibTex Citation plugin
-citation:
-    citation_style: plugins/ieee-with-url.csl
-    citation_locale: en
+plugins:
+ - jekyll-seo-tag
