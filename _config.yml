@@ -100,7 +100,7 @@ content:
         link: https://twitter.com/safecontes
         # link_text: boringcompany.com
         sub_title: Cofounder - CTO - Data Engineer
-        caption: November 2021 - January 2023
+        caption: September 2015 - February 2021
         quote: >
           Improving the experience of SEO specialists and Online Marketeers by using machine learning and Big Data techniques.
         description: | # this will include new lines to allow paragraphs
@@ -140,7 +140,7 @@ content:
         #link: https://www.orange.fr
         # link_text: boringcompany.com
         sub_title: Back Office Application Developer
-        caption: May 2006 - August 2007
+        caption: May 2006 - September 2007
         quote: >
           Backoffice developer
         description: | # this will include new lines to allow paragraphs
@@ -187,7 +187,7 @@ content:
           Partially funded by an Doctoral Grant from the Basque Government.
       - layout: left
         title: University of Basque Country
-        caption: 2010 - 2015
+        caption: 2008 - 2010
         sub_title: MSc in Distributed Systems
         quote: >
           MSc thesis: "Parallelization of Estimation of Distribution Algorithms over the Cell Broadband Engine"
@@ -231,7 +231,7 @@ content:
       - Bread bakery
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
