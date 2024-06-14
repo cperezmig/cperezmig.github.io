@@ -50,7 +50,7 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, I'm __Carlos Pérez-Miguel__. I received the PhD in Computer Science from the University of the Basque Contry, Spain in 2015.
   I have spent the past 16 years developing software in different sectors, both in Industry and Academy.
-  In these years I have been a Backender, a PhD student, a CTO and a Data Engineer.
+  In these years, I have been a Backender, a PhD student, a CTO and a Data Engineer.
   I am currently working as an HPC applications specialist at the [Donostia International Physics Center](https://dipc.ehu.eus/).
 
 content:
