@@ -48,31 +48,27 @@ linkedin_username: cperezmig
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I'm __Carlos Pérez-Miguel__. I received the MSc in Computer Science from the University of the Basque Contry UPV/EHU, Gipuzkoa, Spain in 2005. I am currently pursuing my PhD in Computer Science at the same university in the [Inteligent Systems Group](http://www.sc.ehu.es/ccwbayes/isg/index.php).  My research interests include parallel and distributed systems and specially, peer-to-peer networks.
+  Hi, I'm __Carlos Pérez-Miguel__. I received the PhD in Computer Science from the University of the Basque Contry, Spain in 2015.
+  I have spent the past 16 years developing software in different sectors, both in Industry and Academy.
+  In these years I have been a Backender, a PhD student, a CTO and a Data Engineer.
+  I am currently working as an HPC applications specialist at the [Donostia International Physics Center](https://dipc.ehu.eus/).
 
 content:
-  #- title: Projects # Title for the section
-    #layout: list # Type of content section (list/text)
-    #content:
-      #- layout: top-middle
-        #title: Super awesome project
-        #link: github.com/sproogen
-        ## link_text: Project Website
-        #additional_links:
-          #- title:  sproogen/modern-resume-theme
-            #icon: fab fa-github
-            #url: github.com/sproogen/modern-resume-theme
-          ## - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          ##   icon: fab fa-github
-          ##   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        #quote: >
-          #This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        #description: | # this will include new lines to allow paragraphs
-          #I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
+      - layout: left
+        title: Donostia International Physics Center
+        link: https://dipc.ehu.eus/
+        sub_title: HPC Support and Application Specialist
+        caption: June 2024
+        quote: >
+          Cutting-edge research facility with one of the largest HPC clusters in Spain.
+        description: | # this will include new lines to allow paragraphs
+            HPC application specialist.
+            Technologies: Slurm, Graphana, OpenMP, MPI
+
       - layout: left
         title: Sparta Commodities
         link: https://www.spartacommodities.com/
@@ -182,7 +178,7 @@ content:
 
           Viva: 18/06/2015
 
-          Visiting Scholar at the NICAL group, University of Science and Technology of China, Hefei, China (January-April 2013).
+          Cum Laude, International mention with a visit to the NICAL group, University of Science and Technology of China, Hefei, China (January-April 2013).
 
           Partially funded by an Doctoral Grant from the Basque Government.
       - layout: left
