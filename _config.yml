@@ -162,8 +162,9 @@ content:
         title: University of Basque Country
         caption: 2010 - 2015
         sub_title: PhD in Computer Science
+        link: https://addi.ehu.es/handle/10810/16422
         quote: >
-          PhD thesis: "High Throughput Computing over Peer-to-peer Networks"
+          PhD thesis: "Contributions to High-Throughput Computing Based on the Peer-to-Peer Paradigm"
         description: | # this will include new lines to allow paragraphs
           Advisors: J. Miguel-Alonso and A. Mendiburu
 
